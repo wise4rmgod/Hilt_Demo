@@ -18,7 +18,6 @@ class ListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_list)
 
         todoViewmodel.todolist.observe(this, Observer {
-           // listAdapter = ListAdapter(it)
             recycler.adapter = ListAdapter(it)
 
         })
